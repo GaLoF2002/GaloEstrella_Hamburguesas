@@ -5,7 +5,7 @@
              xmlns:models="clr-namespace:GaloEstrella_Hamburguesas.Models"
              Title="BurgerListPage">
     <Grid RowDefinitions="*,Auto">
-        <CollectionView x:Name="burgerList">
+        <CollectionView x:Name="burgerList" Margin="10" SelectionMode="Single" SelectionChanged="SelectedItem">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="models:Burger">
                     <Grid>
